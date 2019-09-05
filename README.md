@@ -7,7 +7,7 @@ TBD
 
 ## Credits
 
-As usual for my K8s related repos, I am inspired by [@billimek](https://github.com/billimek) and his project [billimek/billimek-charts](https://github.com/billimek/billimek-charts). 
+As usual for my K8s related repos, I am inspired by [@billimek](https://github.com/billimek) and his repo [billimek/billimek-charts](https://github.com/billimek/billimek-charts). 
 
 ## License 
 
