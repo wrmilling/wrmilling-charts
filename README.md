@@ -1,11 +1,11 @@
-# winston-charts
+# wrmilling-charts
 Helm Charts to be packages into a site, eventually. 
 
 ## Installation
 
 ```
-helm repo add winston https://wrmilling.github.io/winston-charts/
-helm search winston
+helm repo add wrmilling https://wrmilling.github.io/wrmilling-charts/
+helm search wrmilling
 ```
 
 ## Credits
