@@ -15,7 +15,7 @@ workflow "Pull Requests" {
 
 action "Package Helm Chart(s)" {
   uses = "billimek/gh-actions/helm-gh-pages@master"
-  args = "https://wrmilling.github.io/winston-charts/"
+  args = "https://wrmilling.github.io/wrmilling-charts/"
   secrets = [
     "GITHUB_TOKEN",
     "COMMIT_EMAIL",
@@ -36,7 +36,7 @@ action "Filter: action 'opened|synchronize'" {
 
 action "Lint changed chart(s) in pull request" {
   uses = "billimek/gh-actions/helm-gh-pages@master"
-  args = "https://wrmilling.github.io/winston-charts/"
+  args = "https://wrmilling.github.io/wrmilling-charts/"
   secrets = ["GITHUB_TOKEN"]
   needs = ["Filter: action 'opened|synchronize'"]
 }
