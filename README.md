@@ -3,7 +3,10 @@ Helm Charts to be packages into a site, eventually.
 
 ## Installation
 
-TBD
+```
+helm repo add winston https://wrmilling.github.io/winston-charts/
+helm search winston
+```
 
 ## Credits
 
