@@ -7,7 +7,7 @@ keywords:
 - teamcity
 - cicd
 home: https://github.com/WRMilling/wrmilling-charts/tree/master/teamcity
-icon: 
+icon: https://i.imgur.com/Hyq48f2.png
 sources:
 - https://www.jetbrains.com/teamcity
 - https://hub.docker.com/r/jetbrains/teamcity-server
