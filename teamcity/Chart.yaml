@@ -1,5 +1,18 @@
 apiVersion: v1
-appVersion: "2019.1.3"
-description: A helm chart to install TeamCity Agents and Server
 name: teamcity
 version: 0.1.2
+appVersion: "2019.1.3"
+description: A helm chart to install TeamCity Agents and Server
+keywords:
+- teamcity
+- cicd
+home: https://github.com/WRMilling/wrmilling-charts/tree/master/teamcity
+icon: 
+sources:
+- https://www.jetbrains.com/teamcity
+- https://hub.docker.com/r/jetbrains/teamcity-server
+- https://hub.docker.com/r/jetbrains/teamcity-agent
+- https://github.com/WRMilling/wrmilling-charts
+maintainers:
+- name: Winston R. Milling
+  email: Winston@Milli.ng
