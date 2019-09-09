@@ -1,4 +1,6 @@
 # wrmilling-charts
+[![Build Status](https://github.com/WRMilling/wrmilling-charts/workflows/Publish%20Helm%20chart%28s%29/badge.svg)](https://wrmilling.github.io/wrmilling-charts/) 
+
 Helm Charts to be packages into a site, eventually. 
 
 ## Installation
