@@ -14,5 +14,5 @@ sources:
 - https://hub.docker.com/r/jetbrains/teamcity-agent
 - https://github.com/WRMilling/wrmilling-charts
 maintainers:
-- name: Winston R. Milling
+- name: WRMilling
   email: Winston@Milli.ng
