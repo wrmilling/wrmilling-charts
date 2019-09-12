@@ -1,0 +1,26 @@
+on: pull_request
+name: Pull Requests
+jobs:
+  build:
+    name: 'Filter: not master branch'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: 'Filter: not master branch'
+      uses: actions/bin/filter@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        args: not branch master
+    - name: 'Filter: action ''opened|synchronize'''
+      uses: actions/bin/filter@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        args: action 'opened|synchronize'
+    - name: Lint changed chart(s) in pull request
+      uses: billimek/gh-actions/helm-gh-pages@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        args: https://wrmilling.github.io/wrmilling-charts/

@@ -1,0 +1,29 @@
+on: push
+name: Publish Helm chart(s)
+jobs:
+  build:
+    name: 'Filter: master branch'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: 'Filter: master branch'
+      uses: actions/bin/filter@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        args: branch master
+    - name: 'Filter: not deleted'
+      uses: actions/bin/filter@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        args: not deleted
+    - name: Package Helm Chart(s)
+      uses: billimek/gh-actions/helm-gh-pages@master
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        COMMIT_EMAIL: ${{ secrets.COMMIT_EMAIL }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SKIP_LINTING: "true"
+      with:
+        args: https://wrmilling.github.io/wrmilling-charts/
