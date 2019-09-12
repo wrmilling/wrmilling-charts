@@ -1,17 +1,14 @@
-on: push
-name: Publish Helm chart(s)
+name: Publish Helm Chart(s)
+on: 
+  push:
+    branches:
+      - master
 jobs:
   build:
-    name: 'Filter: master branch'
+    name: 'Build and Publish Charts to gh-pages'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: 'Filter: master branch'
-      uses: actions/bin/filter@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        args: branch master
     - name: 'Filter: not deleted'
       uses: actions/bin/filter@master
       env:
