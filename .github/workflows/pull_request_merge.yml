@@ -1,7 +1,6 @@
 on: 
   pull_request:
-    types: [closed]
-    brahces: [master]
+    types: [assigned,opened,closed]
 name: "Delete Branches After Merge"
 jobs:
   branchCleanup:
