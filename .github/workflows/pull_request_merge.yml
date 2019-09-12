@@ -1,4 +1,7 @@
-on: pull_request
+on: 
+  pull_request:
+    types: [closed]
+    brahces: [master]
 name: "Delete Branches After Merge"
 jobs:
   branchCleanup:
