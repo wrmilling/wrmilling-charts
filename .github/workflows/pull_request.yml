@@ -1,17 +1,11 @@
 on: pull_request
-name: Pull Requests
+name: Pull Requests Checks
 jobs:
   build:
-    name: 'Filter: not master branch'
+    name: 'Lint Charts in Pull Request'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: 'Filter: not master branch'
-      uses: actions/bin/filter@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        args: not branch master
     - name: 'Filter: action ''opened|synchronize'''
       uses: actions/bin/filter@master
       env:

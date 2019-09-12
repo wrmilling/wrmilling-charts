@@ -1,8 +1,8 @@
 on: pull_request
-name: on pull request merge, delete the branch
+name: "Delete Branches After Merge"
 jobs:
   branchCleanup:
-    name: branch cleanup
+    name: "Delete Branch"
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
@@ -10,3 +10,4 @@ jobs:
       uses: jessfraz/branch-cleanup-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NO_BRANCH_DELETED_EXIT_CODE: "0"
