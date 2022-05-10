@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   code-server:
   - apiVersion: v2
+    appVersion: 4.4.0
+    created: "2022-05-10T20:19:39.415341211Z"
+    description: A Helm chart for coder/code-server
+    digest: 3b9db4c20255e888724f8fbfbe1b3453984a683afb859019ffb442eb57a9b804
+    name: code-server
+    type: application
+    urls:
+    - https://github.com/wrmilling/wrmilling-charts/releases/download/code-server-2.5.0/code-server-2.5.0.tgz
+    version: 2.5.0
+  - apiVersion: v2
     appVersion: 4.0.2
     created: "2022-02-11T19:34:50.735480467Z"
     description: A Helm chart for coder/code-server
@@ -76,4 +86,4 @@ entries:
     urls:
     - https://wrmilling.github.io/wrmilling-charts/teamcity-0.1.0.tgz
     version: 0.1.0
-generated: "2022-02-11T19:34:50.735494068Z"
+generated: "2022-05-10T20:19:39.415363712Z"
