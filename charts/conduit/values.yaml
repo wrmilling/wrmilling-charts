@@ -19,21 +19,21 @@ env:
   # -- Set the container timezone
   TZ: UTC
   # -- Set the Server Name
-  CONDUIT_SERVER_NAME: "your.server.name"
+  CONDUIT_SERVER_NAME: 'your.server.name'
   # -- Set the Database Backend
-  CONDUIT_DATABASE_BACKEND: "rocksdb"
+  CONDUIT_DATABASE_BACKEND: 'rocksdb'
   # -- Flag to allow registration
   CONDUIT_ALLOW_REGISTRATION: true
   # -- Flag to allow federation
   CONDUIT_ALLOW_FEDERATION: true
   # -- Set the maximum request size
-  CONDUIT_MAX_REQUEST_SIZE: "20_000_000"
+  CONDUIT_MAX_REQUEST_SIZE: '20000000'
   # -- Set a list of trusted servers
-  CONDUIT_TRUSTED_SERVERS: "[\"matrix.org\"]"
+  CONDUIT_TRUSTED_SERVERS: '["matrix.org"]'
   # -- Set the maximum concurrent requests
-  CONDUIT_MAX_CONCURRENT_REQUESTS: "100"
+  CONDUIT_MAX_CONCURRENT_REQUESTS: '100'
   # -- Set conduit log configuration
-  CONDUIT_LOG: "info,rocket=off,_=off,sled=off"
+  CONDUIT_LOG: 'info,rocket=off,_=off,sled=off'
 
 service:
   main:
