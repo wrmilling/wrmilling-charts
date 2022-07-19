@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
 appVersion: v0.4.0
-description: A free Microsoft OneDrive Client which supports OneDrive Personal, OneDrive for Business, OneDrive for Office365, and SharePoint
-name: onedrive
-version: 0.0.1
+description: Conduit is a simple, fast and reliable chat server powered by Matrix
+name: conduit
+version: 0.0.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - matrix
