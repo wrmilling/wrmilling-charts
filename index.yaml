@@ -44,6 +44,32 @@ entries:
   conduit:
   - apiVersion: v2
     appVersion: v0.4.0
+    created: "2022-07-19T22:59:18.680093637Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    description: Conduit is a simple, fast and reliable chat server powered by Matrix
+    digest: 260b5ff871bb8782ad67bf5e90503fe30304353cdf24548c445786f1dc3024cc
+    home: https://github.com/wrmilling/wrmilling-charts/tree/master/charts/conduit
+    icon: https://github.com/mozilla/fxemoji/blob/gh-pages/svgs/nature/u26A1-bolt.svg
+    keywords:
+    - matrix
+    - synapse
+    - chat
+    - conduit
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: winston@milli.ng
+      name: wrmilling
+    name: conduit
+    sources:
+    - https://gitlab.com/famedly/conduit
+    urls:
+    - https://github.com/wrmilling/wrmilling-charts/releases/download/conduit-0.0.5/conduit-0.0.5.tgz
+    version: 0.0.5
+  - apiVersion: v2
+    appVersion: v0.4.0
     created: "2022-07-19T22:54:46.470890069Z"
     dependencies:
     - name: common
@@ -193,4 +219,4 @@ entries:
     urls:
     - https://wrmilling.github.io/wrmilling-charts/teamcity-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-19T22:54:46.470910669Z"
+generated: "2022-07-19T22:59:18.68014264Z"
