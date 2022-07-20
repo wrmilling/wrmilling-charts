@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v0.4.0
 description: Conduit is a simple, fast and reliable chat server powered by Matrix
 name: conduit
-version: 0.0.5
+version: 0.0.6
 kubeVersion: ">=1.16.0-0"
 keywords:
   - matrix
