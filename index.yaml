@@ -257,6 +257,30 @@ entries:
     urls:
     - https://github.com/wrmilling/wrmilling-charts/releases/download/dendrite-6.0.0/dendrite-6.0.0.tgz
     version: 6.0.0
+  mastodon:
+  - apiVersion: v2
+    appVersion: v4.2.7
+    created: "2024-02-16T19:49:52.758707146Z"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 19.0.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 11.1.3
+    - condition: redis.enabled
+      name: redis
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 16.13.2
+    description: Mastodon is a free, open-source social network server based on ActivityPub.
+    digest: 50e2c5bbafec0d27ed1af0af171eeed170bc986d2564aeafd9d28d8157b11445
+    name: mastodon
+    type: application
+    urls:
+    - https://github.com/wrmilling/wrmilling-charts/releases/download/mastodon-4.1.1/mastodon-4.1.1.tgz
+    version: 4.1.1
   onedrive:
   - apiVersion: v2
     appVersion: v0.4.0
@@ -330,4 +354,4 @@ entries:
     urls:
     - https://wrmilling.github.io/wrmilling-charts/teamcity-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-28T23:54:07.57091822Z"
+generated: "2024-02-16T19:49:52.758726252Z"
