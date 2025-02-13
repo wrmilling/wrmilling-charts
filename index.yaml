@@ -350,6 +350,28 @@ entries:
     urls:
     - https://github.com/wrmilling/wrmilling-charts/releases/download/mastodon-4.1.1/mastodon-4.1.1.tgz
     version: 4.1.1
+  ocis:
+  - apiVersion: v2
+    appVersion: 7.0.1
+    created: "2025-02-13T22:36:46.37535134Z"
+    description: ownCloud Infinite Scale (oCIS) Helm chart
+    digest: 10b62e8c132b0e66ef75332e84f3544dbb35f8acc46c31f594e66799a70c1756
+    keywords:
+    - owncloud
+    - ocis
+    maintainers:
+    - email: devops@owncloud.com
+      name: ownCloud GmbH
+      url: https://owncloud.com
+    name: ocis
+    sources:
+    - https://github.com/owncloud/ocis-charts
+    - https://github.com/owncloud/ocis
+    - https://github.com/cs3org/reva
+    type: application
+    urls:
+    - https://github.com/wrmilling/wrmilling-charts/releases/download/ocis-0.7.0/ocis-0.7.0.tgz
+    version: 0.7.0
   onedrive:
   - apiVersion: v2
     appVersion: v0.4.0
@@ -423,4 +445,4 @@ entries:
     urls:
     - https://wrmilling.github.io/wrmilling-charts/teamcity-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-06T19:22:46.307940702Z"
+generated: "2025-02-13T22:36:46.375383681Z"
