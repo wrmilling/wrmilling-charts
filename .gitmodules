@@ -1,6 +1,3 @@
 [submodule "charts/mastodon"]
 	path = charts/mastodon
 	url = https://github.com/mastodon/chart.git
-[submodule "submodules/ocis-charts"]
-	path = submodules/ocis-charts
-	url = https://github.com/owncloud/ocis-charts.git
