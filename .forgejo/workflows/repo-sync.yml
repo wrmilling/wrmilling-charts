@@ -3,7 +3,7 @@ run-name: Sync Repository at commit ${{ github.ref }}
 on:
   push:
     branch:
-      - master
+      - main
 jobs:
   Sync-Repository:
     runs-on: alpine-tokyo
