@@ -260,6 +260,29 @@ entries:
   mastodon:
   - apiVersion: v2
     appVersion: v4.4.7
+    created: "2025-10-20T14:05:10.924360046Z"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 19.19.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 14.2.3
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 22.0.7
+    description: Mastodon is a free, open-source social network server based on ActivityPub.
+    digest: ba4b927a0f69ecffc607737963193d2a09888fd4e93e91b8cac94ed5abb30bb8
+    name: mastodon
+    type: application
+    urls:
+    - https://github.com/wrmilling/wrmilling-charts/releases/download/mastodon-6.5.7/mastodon-6.5.7.tgz
+    version: 6.5.7
+  - apiVersion: v2
+    appVersion: v4.4.7
     created: "2025-10-15T16:43:31.979585231Z"
     dependencies:
     - condition: elasticsearch.enabled
@@ -744,4 +767,4 @@ entries:
     urls:
     - https://wrmilling.github.io/wrmilling-charts/teamcity-0.1.0.tgz
     version: 0.1.0
-generated: "2025-10-15T16:43:31.979696598Z"
+generated: "2025-10-20T14:05:10.924468008Z"
