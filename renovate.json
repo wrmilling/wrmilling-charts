@@ -2,5 +2,13 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "git-submodules": {
     "enabled": true
-  }
+  },
+  "packageRules": [
+    {
+      "matchDepTypes": [
+        "action"
+      ],
+      "pinDigests": true
+    }
+  ]
 }
